@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vendingmachine.InsertCoinController">
+   <children>
+      <fx:include source="layout.fxml" />
+      <TextField fx:id="amount" layoutX="566.0" layoutY="147.0" />
+      <Text layoutX="602.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert Amount" />
+      <Button layoutX="1189.0" layoutY="681.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <Button layoutX="621.0" layoutY="206.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
+      <Label fx:id="errorAdd" alignment="CENTER" contentDisplay="CENTER" layoutY="179.0" prefHeight="17.0" prefWidth="1280.0" textAlignment="CENTER" textFill="RED" />
+      <Button layoutX="607.0" layoutY="380.0" mnemonicParsing="false" onAction="#onWithdraw" text="Withdraw" />
+      <Text layoutX="524.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Balance: " />
+      <Label fx:id="currentBalance" layoutX="613.0" layoutY="334.0" prefHeight="17.0" prefWidth="121.0" text="Balance" />
+      <Label fx:id="errorWithdraw" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="356.0" prefHeight="17.0" prefWidth="1280.0" textAlignment="CENTER" textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+Create mysql database name vending_machine
+
+use the below commands to create required tables
+
+create table vending_machine.money_logs(id int NOT NULL AUTO_INCREMENT,
+    Type varchar(255),
+    amount int,
+    balance int,
+    primary key (id)
+    );
+    
+create table vending_machine.items(id int NOT NULL auto_increment,
+value char,
+name varchar(255),
+price int,
+quantity int,
+primary key (id)
+);
+
+create table vending_machine.itemlogs(id int NOT NULL auto_increment,
+value char,
+name varchar(255),
+price int,
+quantityFrom int,
+quantityTo int,
+balancefrom int,
+balanceTo int, 
+primary key (id)
+);
+
+After setting up the database please put your database information like username and password in connectToDB class
